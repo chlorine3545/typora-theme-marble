@@ -45,7 +45,7 @@ The theme is open source on both [Github](https://github.com/yoghurtlee-thu/typo
 - [ ] Optimize code colors
 - [ ] Refer to other excellent themes for style improvement
 - [ ] Submit the theme to the Typora theme store
-- [ ] ????
+- [ ] ...
 
 ## Contribution
 
