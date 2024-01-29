@@ -15,8 +15,8 @@
     /* List Marker */
     --highlight-color: #ffffe0;
     /* 高亮 Highlight */
-    --header-span-color: #A9A9A9;
-    /* H2 标题下划线 h2 Span Color */
+    --header-udln-color: #A9A9A9;
+    /* H2 标题下划线 h2 underline Color */
     --block-bg-color: #e8e8e8d0;
     /* 块元素背景色 Block Background */
     --img-shadow-color: #e3e8f0;
@@ -66,10 +66,7 @@
     font-weight: bold;
 }
 
-/*
- * 基础样式
- * Basic Style
- */
+/* 基础样式 Basic Style */
 
 #write {
     max-width: 950px;
@@ -138,11 +135,7 @@
     color: var(--marker-color);
 }
 
-
-/* 
- * 目录
- * TOC
- */
+/* 目录 TOC */
 
 .md-toc-content {
     font-family: 'Cantarell', 'LXGWWenKaiGB';
@@ -186,10 +179,7 @@ mark {
     color: inherit;
 }
 
-/* 
- * 段落
- * Paragraph
- */
+/* 段落 Paragraph */
 
 #write+p,
 #write blockquote p {
@@ -201,10 +191,7 @@ mark {
     color: var(--text-color);
 }
 
-/*
- * 标题
- * Header
- */
+/* 标题 Header */
 
 #write h2,
 #write h3,
@@ -251,7 +238,7 @@ mark {
 
 #write h2 code {
     color: var(--bg-color);
-    background-color: var(--header-span-color);
+    background-color: var(--header-udln-color);
 }
 
 #write h1 {
@@ -283,22 +270,10 @@ mark {
     margin-bottom: 1.6rem;
 }
 
-#write h2 {
-    margin: 0.5em 0 0.5em;
-}
-
-#write h3 {
-    margin: 0.45em 0 0.45em;
-}
-
-#write h4 {
-    margin: 0.5em 0 0.5em;
-}
-
-#write h5 {
-    margin: 0.5em 0 0.5em;
-}
-
+#write h2,
+#write h3,
+#write h4,
+#write h5,
 #write h6 {
     margin: 0.5em 0 0.5em;
 }
@@ -312,44 +287,37 @@ blockquote h6.md-focus:before {
 
 /*为了方便区分, 在2~6级标题前面加了一个小标记*/
 
-#write h2::before {
-    content: "H2";
+#write h2::before,
+#write h3::before,
+#write h4::before,
+#write h5::before,
+#write h6::before {
     vertical-align: super;
     font-size: 0.35em;
     margin-right: 0.4em;
+}
+
+#write h2::before {
+    content: "H2";
 }
 
 #write h3::before {
     content: "H3";
-    vertical-align: super;
-    font-size: 0.35em;
-    margin-right: 0.4em;
 }
 
 #write h4::before {
     content: "H4";
-    vertical-align: super;
-    font-size: 0.35em;
-    margin-right: 0.4em;
 }
 
 #write h5::before {
     content: "H5";
-    vertical-align: super;
-    font-size: 0.35em;
-    margin-right: 0.4em;
 }
 
 #write h6::before {
     content: "H6";
-    vertical-align: super;
-    font-size: 0.35em;
-    margin-right: 0.4em;
 }
 
-/*
- * List
- */
+/* 列表 List */
 
 ::marker {
     font-weight: bold;
@@ -392,10 +360,8 @@ li.md-list-item {
     font-weight: 500;
 }
 
-/*
- * 引用
- * Quote
- */
+/* 引用块 blockquote */
+
 #write blockquote {
     display: block;
     font-size: .9em;
@@ -421,9 +387,7 @@ li.md-list-item {
     color: #E0E0E0;
 }
 
-/*
- * Inline code
- */
+/* 内联代码 inline code */
 
 #write code {
     color: var(--primary-color);
@@ -438,9 +402,7 @@ li.md-list-item {
     word-break: break-all;
 }
 
-/*
- * Img
- */
+/* 图像 */
 
 #write img {
     margin: 0 auto;
@@ -455,9 +417,8 @@ li.md-list-item {
     padding: 1rem;
 }
 
-/*
- * Table
- */
+/* 表格 Table */
+
 #write table {
     display: table;
     text-align: justify;
@@ -507,7 +468,7 @@ table td {
     width: auto !important;
 }
 
-/* Footnote */
+/* 脚注 Footnote */
 
 sup.md-footnote {
     background-color: var(--block-bg-color);
@@ -518,9 +479,7 @@ sup.md-footnote {
     color: var(--primary-color);
 }
 
-/*
- * Math Script 
- */
+/* 数学公式 Math Script */
 
 .md-inline-math script {
     color: var(--primary-color);
@@ -554,9 +513,8 @@ sup.md-footnote {
     font-family: 'JetBrainsMono';
 }
 
-/*
- * Dividing line
- */
+/* 分割线 Dividing line */
+
 hr {
     margin-top: 20px;
     margin-bottom: 20px;
@@ -724,10 +682,7 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
     width: 1rem;
 }
 
-/* 
- * 代码块风格
- * Code Block - Style
- */
+/* 代码块风格 Code Block - Style */
 
 .md-fences:before {
     content: ' ';
