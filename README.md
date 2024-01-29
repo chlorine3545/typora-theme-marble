@@ -1,4 +1,4 @@
-<p align="right"> 简体中文</p>
+<p align="right"><a href="README.en.md">English</a> / 简体中文</p>
 <h1 align="center">Typora Theme - Marble</h1>
 <p align="center">一款简约柔和的 Typora 主题</p>
 <div align="center">
