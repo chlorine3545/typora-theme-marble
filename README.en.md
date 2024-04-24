@@ -4,7 +4,6 @@
 <div align="center">
 </div>
 
-
 ## Introduction
 
 I've always been a fan of Typora's [Lapis theme](https://github.com/YiNNx/typora-theme-lapis). So, after I decided to modify the Lapis CSS file to use my favorite font, LxgwWenKai, I decided to create a new theme.
@@ -49,9 +48,9 @@ The theme is open source on both [Github](https://github.com/yoghurtlee-thu/typo
 
 ## Contribution
 
-This theme was initially for personal use, and the style was adjusted based on my personal preferences. It was written entirely on Windows 11 23H2 and has not been tested on other systems, so there may be unknown style issues on MacOS and Linux.
+This theme was initially for personal use, and the style was adjusted based on my personal preferences. The initial development of this theme was based on Windows 11 23H2, and subsequent maintenance was based on macOS Sonoma. so there may be unknown style issues on other systems.
 
-Raising Issues/Pull Requests on Github/Gitee is always welcomed. You can also reach me via email at [chlorine3545@163.com](vscode-file://vscode-app/d:/%E7%A8%8B%E5%BA%8F/Microsoft%20VS%20Code/resources/app/out/vs/code/electron-sandbox/workbench/workbench.html "mailto:&amp;#x63;&amp;#x68;&amp;#108;&amp;#x6f;&amp;#114;&amp;#x69;&amp;#110;&amp;#x65;&amp;#x33;&amp;#x35;&amp;#52;&amp;#x35;&amp;#64;&amp;#49;&amp;#54;&amp;#x33;&amp;#x2e;&amp;#99;&amp;#x6f;&amp;#x6d;"). Thank you for your valuable opinions and suggestions.
+Raising Issues/Pull Requests on Github/Gitee is always welcomed. You can also reach me via email at [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com). Thank you for your valuable opinions and suggestions.
 
 ## Acknowledgements
 

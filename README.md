@@ -50,18 +50,18 @@ Marble 主题采用自然柔和的主题配色。背景颜色为大理石色，�
 
 ## 贡献
 
-本主题最初仅供个人使用，主题样式基于作者个人的喜好进行调整；同时本主题完全基于 Windows 11 23H2 系统编写，未在其他系统进行测试，因此在 MacOS 和 Linux 上可能存在未知的样式问题。
+本主题最初仅供个人使用，主题样式基于作者个人的喜好进行调整；同时本主题的最初开发基于 Windows 11 23H2 系统，后续维护基于 macOS Sonoma 系统，在其他系统上可能存在未知的样式问题。
 
 由于作者暂时没有主题维护能力，因此对于出现的问题仅能保证尽力修复。若有社区大佬愿意出手相助，不胜感激（合十）。
 
-欢迎您在 Github/Gitee 提出 Issue/Pull Request。您也可以通过邮件chlorine3545@163.com联系我，感谢您宝贵的意见和建议。
+欢迎您在 Github/Gitee 提出 Issue/Pull Request。您也可以通过邮件 [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) 联系我，感谢您宝贵的意见和建议。
 
 ## 致谢
 
-- 样式代码基于[YiNNx](https://github.com/YiNNx)的[Lapis主题](https://github.com/YiNNx/typora-theme-lapis)。
+- 样式代码基于 [YiNNx](https://github.com/YiNNx) 的 [Lapis主题](https://github.com/YiNNx/typora-theme-lapis) 。
 - 中文字体采用好看的开源字体[霞鹜文楷 LXGW](https://github.com/lxgw/LxgwWenKai)。
 - 感谢 ChatGPT 和 Github Copilot 的鼎力相助（逃
 
 ## 许可
 
-Marble 主题在 MIT License 下开源。[这里](https://github.com/YiNNx/typora-theme-lapis/blob/main/License)是原主题 Lapis 的 MIT License 地址。
+Marble 主题在 MIT License 下开源。[这里](https://github.com/YiNNx/typora-theme-lapis/blob/main/License) 是原主题 Lapis 的 MIT License 地址。
