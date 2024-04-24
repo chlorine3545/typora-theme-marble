@@ -2,12 +2,14 @@
 
 /*Typora Theme: Marble | https://github.com/yoghurtlee-thu/typora-theme-marble  https://gitee.com/yoghurtlee-thu/typora-theme-marble */
 
+@import url('marble/LXGWWenKaiGBScreen/font.css');
+
 :root {
     --text-color: #2b353af5;
     /* 文本颜色 Text */
     --primary-color: #000000;
     /* 基础颜色 Primary Color */
-    --bg-color: #f8f8f8db;
+    --bg-color: #ffffff;
     --side-bar-bg-color: var(--bg-color);
     /* 背景色 Background */
 
@@ -41,8 +43,8 @@
 }
 
 /*
- * 字体采用 Cantarell, 霞鹜文楷 GB 和 JetBrains Mono
- * Font-face for Cantarell, LXGWWenKai GB and JetBrains Mono
+ * 字体采用 Cantarell, 霞鹜文楷 GB Screen 和 JetBrains Mono
+ * Font-face for Cantarell, LXGWWenKai GB Screen and JetBrains Mono
  */
 
 @font-face {
@@ -53,17 +55,6 @@
 @font-face {
     font-family: "JetBrainsMono";
     src: url('marble/JetBrainsMono-Regular.ttf');
-}
-
-@font-face {
-    font-family: "LXGWWenKaiGB";
-    src: url('marble/LXGWWenKaiGB-Regular.ttf');
-}
-
-@font-face {
-    font-family: "LXGWWenKaiGB";
-    src: url('marble/LXGWWenKaiGB-Bold.ttf');
-    font-weight: bold;
 }
 
 /* 基础样式 Basic Style */
@@ -79,7 +70,7 @@
     word-wrap: break-word;
     text-align: justify;
 
-    font-family: 'Cantarell', 'LXGWWenKaiGB', 'JetBrainsMono';
+    font-family: 'Cantarell', 'LXGWWenKaiGBScreen', 'JetBrainsMono';
     margin-bottom: 20rem;
 }
 
@@ -101,13 +92,15 @@
 
 #write strong {
     color: var(--primary-color);
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+    font-weight: 575;
 }
 
 /* 链接 Link */
 
-#write a {
+#write strong {
     color: var(--primary-color);
+    font-weight: 575;
+    text-shadow: 0.4px 0.4px 0.8px rgba(0, 0, 0, 0.2);
 }
 
 #write .md-p a,
@@ -138,7 +131,7 @@
 /* 目录 TOC */
 
 .md-toc-content {
-    font-family: 'Cantarell', 'LXGWWenKaiGB';
+    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
 }
 
 .md-toc-content:empty:before {
@@ -146,7 +139,7 @@
 }
 
 #write div.md-toc-tooltip {
-    font-family: 'Cantarell', 'LXGWWenKaiGB';
+    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
     color: var(--primary-color);
     position: static;
     margin-top: 10px;
@@ -207,7 +200,7 @@ mark {
 #write h4,
 #write h5,
 #write h6 {
-    font-family: 'Cantarell', 'LXGWWenKaiGB';
+    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
     padding: 0px;
     color: var(--primary-color);
 }
@@ -448,7 +441,7 @@ li.md-list-item {
 }
 
 #write table tr th {
-    font-family: LXGWWenKaiGB;
+    font-family: LXGWWenKaiGBScreen;
     text-align: center;
     min-width: 10rem;
     font-weight: bold;
@@ -564,7 +557,7 @@ blockquote .task-list-item input::before {
  * Sidebar
  */
 #typora-sidebar {
-    font-family: 'Cantarell', 'LXGWWenKaiGB';
+    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
     height: 100%;
     color: var(--text-color);
     font-size: 0.92rem;
