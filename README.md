@@ -16,7 +16,9 @@
 
 这里是一份预览图片。
 
-<img src="imgs/img1.webp" width="80%" />
+<div style="display: flex; justify-content: center;">
+    <img src="imgs/img1.webp" width="80%" />
+</div>
 
 ## 特点
 
