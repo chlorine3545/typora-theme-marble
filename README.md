@@ -34,7 +34,7 @@ Marble 主题采用自然柔和的主题配色。背景颜色为大理石色，�
 
 ## 安装
 
-目前主题在 [Github](https://github.com/yoghurtlee-thu/typora-theme-marble) 和 [Gitee](https://gitee.com/yoghurtlee-thu/typora-theme-marble) 均有开源，大家可以自行选择下载源。
+目前主题在 [Github](https://github.com/yoghurtlee-thu/typora-theme-marble) ， [Gitee](https://gitee.com/yoghurtlee-thu/typora-theme-marble) 和 [Codeburg](https://codeberg.org/chlorine3545/typora-theme-marble) 均有开源，大家可以自行选择下载源。
 
 1. Clone 此仓库，或从 Latest Release 中下载 `typora-theme-marble.zip`并解压。
 2. 打开 Typora 菜单的主题部分，点击“打开主题文件夹”按钮。
@@ -56,7 +56,7 @@ Marble 主题采用自然柔和的主题配色。背景颜色为大理石色，�
 
 由于作者暂时没有主题维护能力，因此对于出现的问题仅能保证尽力修复。若有社区大佬愿意出手相助，不胜感激（合十）。
 
-欢迎您在 Github/Gitee 提出 Issue/Pull Request。您也可以通过邮件 [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) 联系我，感谢您宝贵的意见和建议。
+欢迎您在 Github/Gitee/Codeburg 提出 Issue/Pull Request。您也可以通过邮件 [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) 联系我，感谢您宝贵的意见和建议。
 
 ## 致谢
 
