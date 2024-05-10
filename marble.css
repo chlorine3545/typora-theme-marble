@@ -1,6 +1,6 @@
-/*Typora 主题: Marble (意: 大理石)| 地址: https://github.com/yoghurtlee-thu/typora-theme-marble  https://gitee.com/yoghurtlee-thu/typora-theme-marble */
+/* Typora 主题: Marble (意: 大理石) */
 
-/*Typora Theme: Marble | https://github.com/yoghurtlee-thu/typora-theme-marble  https://gitee.com/yoghurtlee-thu/typora-theme-marble */
+/*Typora Theme: Marble */
 
 @import url('marble/LXGWWenKaiGBScreen/font.css');
 
@@ -191,7 +191,7 @@ mark {
 #write h4,
 #write h5,
 #write h6 {
-    font-weight: strong;
+    font-weight: normal;
 }
 
 #write h1,
@@ -217,7 +217,7 @@ mark {
     background-repeat: no-repeat;
     background-size: 120% 1.2px;
     background-position: center bottom;
-    /*做了一条很浅的渐变下划线*/
+    /* 做了一条很浅的渐变下划线 */
 }
 
 #write h2 a {
