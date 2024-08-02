@@ -7,7 +7,7 @@
 - 采用**自然矿石色系配色**，视觉效果柔和。[^1]
 - 字体较为美观
   - 采用*霞鹜文楷*取代~~思源宋体~~作为中文字体，英文使用[Cantarell](https://fonts.google.com/specimen/Cantarell)字体。
-  - 代码字体使用 ==Jetbrains Mono==。链接：https://www.jetbrains.com/lp/mono/
+  - 代码字体使用 ==Fira Code==。链接：https://github.com/tonsky/FiraCode
 
 ---
 
@@ -47,9 +47,7 @@ int main()
 
 ### 图像
 
-(原本的预览图丢了，放个我的头像凑合下 qaq)
-
-![小氯](imgs/小氯.jpg)
+![图源：Unsplash](imgs/demopic.avif)
 
 1. Marble 的意思是大理石，这个词概括了主题的风格，也致敬了原本的 Lapis 主题。
 2. 但是我们的主题还有需要改进的地方。
