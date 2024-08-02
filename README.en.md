@@ -14,7 +14,9 @@ I don't know CSS (yes, you heard it right, I don't know CSS at all), so the them
 
 Here is a preview image.
 
-<img src="imgs/img1.webp" width="80%" />
+<div style="display: flex; justify-content: center;">
+    <img src="imgs/pres.avif" width="80%" />
+</div>
 
 ## Features
 
@@ -26,11 +28,11 @@ The Marble theme uses a natural and soft color scheme. The background color is m
 
 ### Code Blocks
 
-The code font is [Jetbrains Mono](https://www.jetbrains.com/lp/mono/). The code block color scheme is mainly based on the Lapis theme, with modifications using colors of various minerals such as rose gypsum, lapis lazuli, sapphire, chalk, pyrite, and turquoise.
+The code font is [Fira Code](https://github.com/tonsky/FiraCode). The code block color scheme is mainly based on the Lapis theme, with modifications using colors of various minerals such as rose gypsum, lapis lazuli, sapphire, chalk, pyrite, and turquoise.
 
 ## Installation
 
-The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-theme-marble) 
+The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-theme-marble)
 , [Gitee](https://gitee.com/yoghurtlee-thu/typora-theme-marble) and [Codeburg](https://codeberg.org/chlorine3545/typora-theme-marble) . Feel free to choose your preferred download source.
 
 1. Clone this repository, or download `typora-theme-marble.zip` from Latest Release and unzip it.
@@ -51,7 +53,7 @@ The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-th
 
 This theme was initially for personal use, and the style was adjusted based on my personal preferences. The initial development of this theme was based on Windows 11 23H2, and subsequent maintenance was based on macOS Sonoma. so there may be unknown style issues on other systems.
 
-Raising Issues/Pull Requests on Github/Gitee/Codeburg is always welcomed. You can also reach me via email at [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com). Thank you for your valuable opinions and suggestions.
+Raising Issues/Pull Requests on Github/Gitee/Codeburg is always welcomed. You can also reach me via email at [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) or via Jami @chlorine3545. Thank you for your valuable opinions and suggestions.
 
 ## Acknowledgements
 

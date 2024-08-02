@@ -17,7 +17,7 @@
 这里是一份预览图片。
 
 <div style="display: flex; justify-content: center;">
-    <img src="imgs/img1.webp" width="80%" />
+    <img src="imgs/pres.avif" width="80%" />
 </div>
 
 ## 特点
@@ -30,7 +30,7 @@ Marble 主题采用自然柔和的主题配色。背景颜色为大理石色，�
 
 ### 代码块
 
-代码字体使用 [Jetbrains Mono](https://www.jetbrains.com/lp/mono/)。代码块配色主要基于 Lapis 主题，使用了一些矿石的颜色进行修改，例如玫瑰石膏、青金石、蓝宝石、白垩石、黄铁矿和绿松石等。由于我并不熟悉前端开发加之审美水平有限，可能不是很好看，欢迎大家提出修改意见。
+代码字体使用 [Fira Code](https://github.com/tonsky/FiraCode)。代码块配色主要基于 Lapis 主题，使用了一些矿石的颜色进行修改，例如玫瑰石膏、青金石、蓝宝石、白垩石、黄铁矿和绿松石等。由于我并不熟悉前端开发加之审美水平有限，可能不是很好看，欢迎大家提出修改意见。
 
 ## 安装
 
@@ -56,7 +56,7 @@ Marble 主题采用自然柔和的主题配色。背景颜色为大理石色，�
 
 由于作者暂时没有主题维护能力，因此对于出现的问题仅能保证尽力修复。若有社区大佬愿意出手相助，不胜感激（合十）。
 
-欢迎您在 Github/Gitee/Codeburg 提出 Issue/Pull Request。您也可以通过邮件 [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) 联系我，感谢您宝贵的意见和建议。
+欢迎您在 Github/Gitee/Codeburg 提出 Issue/Pull Request。您也可以通过邮件 [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) 或通过我的 Jami @chlorine3545 联系我，感谢您宝贵的意见和建议。
 
 ## 致谢
 

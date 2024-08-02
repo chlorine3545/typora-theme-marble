@@ -1,26 +1,46 @@
-/* Typora ����: Marble (��: ����ʯ) */
+/* Typora 主题: Marble (意: 大理石) */
 
-/*Typora Theme: Marble */
+/* Typora Theme: Marble */
 
-@import url('marble/LXGWWenKaiGBScreen/font.css');
+@import url('marble/LXGWWenKaiLite/result.css');
+@import url('marble/Cantarell-VF-fixed/result.css');
+@import url('marble/FiraCode-VF/result.css');
 
 :root {
-    --text-color: #2b353af5;
-    /* �ı���ɫ Text */
-    --primary-color: #000000;
-    /* ������ɫ Primary Color */
-    --bg-color: #ffffff;
-    --side-bar-bg-color: var(--bg-color);
-    /* ����ɫ Background */
+    /* 文本颜色 Text */
+    --text-color: #222222;
+    /* TODO：基础颜色 Primary Color */
+    --primary-color: #191919;
+    --secondary-color: #555555;
 
-    --marker-color: #020101;
-    /* List Marker */
-    --highlight-color: #ffffe0;
-    /* ���� Highlight */
-    --header-udln-color: #A9A9A9;
-    /* H2 �����»��� h2 underline Color */
-    --block-bg-color: #e8e8e8d0;
-    /* ��Ԫ�ر���ɫ Block Background */
+    /* 背景色 Background */
+    --bg-color: #f0f0f0;
+    --side-bar-bg-color: var(--bg-color);
+
+    /*! ----Markdown 标记颜色 BEG---- */
+
+    /* 列表标记 List Marker */
+    --md-char-color: #C7C5C5;
+    --marker-color: var(--secondary-color);
+    --block-bg-color: #eaeaea;
+    --quote-bar-color: #cccccc;
+
+    --cell-border-color: #d9dfe4;
+    /* 单元格的边框颜色 */
+    --header-bg-color: #f0f0f0;
+    /* 表头背景颜色 */
+    --cell-hover-bg-color: #e9ecef;
+    /* 单元格悬停背景颜色 */
+
+    /*! ----Markdown 标记颜色 END---- */
+
+    /* 高亮 Highlight */
+    --highlight-color: #fffee0;
+    --meta-content-color: #a9a9a9;
+
+    --header-udln-color: var(--meta-content-color);
+    /* H2 标题下划线 h2 underline Color */
+    /* 块元素背景色 Block Background */
     --img-shadow-color: #e3e8f0;
 
     /* Overwrite of Typora Base Color */
@@ -42,22 +62,7 @@
     }
 }
 
-/*
- * ������� Cantarell, ϼ���Ŀ� GB Screen �� JetBrains Mono
- * Font-face for Cantarell, LXGWWenKai GB Screen and JetBrains Mono
- */
-
-@font-face {
-    font-family: "Cantarell";
-    src: url('marble/Cantarell-VF-fixed.otf');
-}
-
-@font-face {
-    font-family: "JetBrainsMono";
-    src: url('marble/JetBrainsMono-Regular.ttf');
-}
-
-/* ������ʽ Basic Style */
+/* 基础样式 Basic Style */
 
 #write {
     max-width: 950px;
@@ -69,8 +74,7 @@
     word-break: break-word;
     word-wrap: break-word;
     text-align: justify;
-
-    font-family: 'Cantarell', 'LXGWWenKaiGBScreen', 'JetBrainsMono';
+    font-family: 'Cantarell', 'LXGW WenKai Lite', 'Fira Code Light';
     margin-bottom: 20rem;
 }
 
@@ -95,7 +99,7 @@
     font-weight: 575;
 }
 
-/* ���� Link */
+/* 链接 Link */
 
 #write strong {
     color: var(--primary-color);
@@ -110,6 +114,11 @@
     margin: 2px;
 }
 
+#write a {
+    color: #444444;
+    text-decoration: underline dashed;
+}
+
 #write h2.md-heading a {
     text-decoration: underline;
     border-bottom: 0;
@@ -122,16 +131,16 @@
 [md-inline=image]>.md-meta {
     word-break: break-all;
     font-weight: normal;
-    font-family: 'JetBrainsMono';
+    font-family: 'Fira Code Light';
     padding-left: 0.15rem;
     padding-right: 0rem;
     color: var(--marker-color);
 }
 
-/* Ŀ¼ TOC */
+/* 目录 TOC */
 
 .md-toc-content {
-    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
+    font-family: 'Cantarell', 'LXGW WenKai Lite';
 }
 
 .md-toc-content:empty:before {
@@ -139,7 +148,7 @@
 }
 
 #write div.md-toc-tooltip {
-    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
+    font-family: 'Cantarell', 'LXGW WenKai Lite';
     color: var(--primary-color);
     position: static;
     margin-top: 10px;
@@ -160,6 +169,7 @@
     border-color: var(--bg-color);
     margin: 9px 0px;
     margin-top: 8px;
+    color: var(--text-color);
 }
 
 
@@ -172,7 +182,7 @@ mark {
     color: inherit;
 }
 
-/* ���� Paragraph */
+/* 段落 Paragraph */
 
 #write+p,
 #write blockquote p {
@@ -184,110 +194,87 @@ mark {
     color: var(--text-color);
 }
 
-/* ���� Header */
+/* 标题 Header */
 
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
-    font-weight: normal;
-}
-
+/* 去除粗体效果，使标题不太突出 */
 #write h1,
 #write h2,
 #write h3,
 #write h4,
 #write h5,
 #write h6 {
-    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
-    padding: 0px;
+    font-weight: normal;
+    font-family: 'Cantarell', 'LXGW WenKai Lite', sans-serif;
     color: var(--primary-color);
+    margin: 0.4em 0;
+    /* 调整标题的上下间距 */
+    padding: 0;
+    /* 去除默认的内边距 */
+    position: relative;
+    /* 为伪元素定位提供基础 */
 }
 
+/* 调整各级标题的字体大小 */
 #write h1 {
+    font-size: 1.8em;
     text-align: center;
 }
 
 #write h2 {
-    color: var(--primary-color);
-    padding: 1px 0px;
-    display: inline-block;
+    font-size: 1.6em;
+}
+
+#write h3 {
+    font-size: 1.4em;
+}
+
+#write h4 {
+    font-size: 1.2em;
+}
+
+#write h5 {
+    font-size: 1em;
+}
+
+#write h6 {
+    font-size: 0.9em;
+}
+
+/* 标题下划线效果，仅应用于h2 */
+#write h2 {
     background-image: linear-gradient(to left, transparent, var(--block-bg-color), transparent);
     background-repeat: no-repeat;
     background-size: 120% 1.2px;
     background-position: center bottom;
-    /* ����һ����ǳ�Ľ����»��� */
 }
 
-#write h2 a {
-    color: var(--bg-color);
-    border-bottom-color: var(--bg-color) !important;
-}
-
-#write h2 strong {
-    color: var(--bg-color);
-}
-
+/* 确保标题内链接、加粗和代码元素的颜色一致 */
+#write h2 a,
+#write h2 strong,
 #write h2 code {
     color: var(--bg-color);
-    background-color: var(--header-udln-color);
 }
 
-#write h1 {
-    font-size: 2.2em;
-}
-
-#write h2 {
-    font-size: 2rem;
-}
-
-#write h3 {
-    font-size: 1.8rem;
-}
-
-#write h4 {
-    font-size: 1.6rem;
-}
-
-#write h5 {
-    font-size: 1.4rem;
-}
-
-#write h6 {
-    font-size: 1.2rem;
-}
-
-#write h1 {
-    padding-top: 0.9rem;
-    margin-bottom: 1.6rem;
-}
-
-#write h2,
-#write h3,
-#write h4,
-#write h5,
-#write h6 {
-    margin: 0.5em 0 0.5em;
-}
-
-blockquote h3.md-focus:before,
-blockquote h4.md-focus:before,
-blockquote h5.md-focus:before,
-blockquote h6.md-focus:before {
-    left: -1.3rem;
-}
-
-/*Ϊ�˷�������, ��2~6������ǰ�����һ��С���*/
-
+/* 悬浮的标题层级标志 */
 #write h2::before,
 #write h3::before,
 #write h4::before,
 #write h5::before,
 #write h6::before {
-    vertical-align: super;
-    font-size: 0.35em;
-    margin-right: 0.4em;
+    content: attr(data-level);
+    /* 使用data-level属性动态生成内容 */
+    font-size: 0.4em;
+    /* 调整标志的大小，使其不太显眼 */
+    color: var(--meta-content-color);
+    /* 使用次要颜色，使其不突兀 */
+    margin-right: 0.5em;
+    /* 与标题文字保持一定距离 */
+    vertical-align: middle;
+    /* 与文本对齐 */
+    position: absolute;
+    /* 绝对定位 */
+    left: -1.5em;
+    /* 根据需要调整位置 */
 }
 
 #write h2::before {
@@ -310,169 +297,278 @@ blockquote h6.md-focus:before {
     content: "H6";
 }
 
-/* �б� List */
+/* 列表 List */
 
+/* 设置列表项的标记样式 */
 ::marker {
     font-weight: bold;
     color: var(--marker-color);
+    /* 设置标记颜色 */
 }
 
-li.md-list-item {
-    margin: 0.5rem 0;
-}
-
+/* 列表项的通用样式 */
 #write ul,
 #write ol {
-    margin-top: 8px;
-    margin-bottom: 8px;
-    padding-left: 20px;
+    margin: 1em 0;
+    /* 设置列表的上下间距 */
+    padding-left: 1.675em;
+    /* 设置列表相对于正文的缩进 */
 }
 
+/* 无序列表的样式 */
 #write ul {
     list-style-type: disc;
+    /* 默认的无序列表标记 */
 }
 
-#write em {
-    padding: 0 3px 0 0;
-}
-
+/* 嵌套无序列表的样式 */
 #write ul ul {
     list-style-type: square;
+    /* 第二级嵌套的无序列表标记 */
 }
 
+#write ul ul ul {
+    list-style-type: circle;
+    /* 第三级嵌套的无序列表标记 */
+}
+
+#write ul ul ul ul {
+    list-style-type: disc;
+    /* 第四级及以上的嵌套无序列表标记 */
+}
+
+/* 有序列表的样式 */
 #write ol {
     list-style-type: decimal;
+    /* 默认的有序列表标记 */
 }
 
-#write li section {
-    margin-top: 5px;
-    margin-bottom: 5px;
+/* 列表项内容的样式 */
+#write li {
+    margin: 0.5em 0;
+    /* 列表项的上下间距 */
     line-height: 1.7rem;
-    text-align: justify;
+    /* 调整列表项的行高 */
     color: var(--text-color);
+    /* 列表项文字颜色 */
     font-weight: 500;
+    /* 列表项字体权重 */
+    text-align: justify;
+    /* 列表项文本对齐方式 */
 }
 
-/* ���ÿ� blockquote */
+/* 加粗斜体元素的样式 */
+#write em {
+    padding: 0 3px 0 0;
+    /* 调整斜体文字的内边距 */
+}
+
+/* 引用块 blockquote */
 
 #write blockquote {
-    display: block;
-    font-size: .9em;
-    overflow: auto;
-    padding: 15px 30px 15px 42px;
-    margin-bottom: 20px;
-    margin-top: 20px;
-    background: var(--block-bg-color);
-    position: relative;
+    border-left: 4px solid var(--quote-bar-color);
+    /* 左侧竖线标识，颜色比正文略浅 */
+    margin: 1em 0 1em 0.8em;
+    /* 上下间距 */
+    padding: 0.5em 1em;
+    /* 内边距 */
+    color: var(--secondary-color);
+    /* 引用文本颜色 */
+    font-size: 0.9em;
+    /* 调整引用文本的字体大小 */
+    background: none;
+    /* 无背景色 */
 }
 
-#write blockquote::before {
-    content: ">";
-    /*����һ��С���>*/
-    font-size: 2.3em;
-    position: absolute;
-    left: 20px;
-    /* �������λ�� */
-    top: 50%;
-    /* ������ʾ */
-    transform: translateY(-55%);
-    /* ���ڴ�ֱ���� */
-    color: #E0E0E0;
-}
-
-/* �������� inline code */
+/* 内联代码 inline code */
 
 #write code {
-    color: var(--primary-color);
-    font-size: 94%;
+    color: var(--secondary-color);
+    /* 设置代码文本颜色，保持与主题色调一致 */
+    font-size: 0.94em;
     font-weight: normal;
-    word-wrap: break-word;
-    padding: 2px 4px 2px;
-    border-radius: 3px;
+    padding: 2px 5px;
+    /* 调整内边距 */
+    border-radius: 4px;
+    /* 圆角边框 */
     margin: 2px;
+    /* 外边距 */
     background-color: var(--block-bg-color);
-    font-family: 'JetBrainsMono';
+    font-family: 'Fira Code Light', monospace;
+    word-wrap: break-word;
     word-break: break-all;
+    border: 1px solid var(--code-border-color);
+    /* 细边框，增加层次感 */
 }
 
-/* ͼ�� */
+/* 图像 */
 
 #write img {
-    margin: 0 auto;
     max-width: 100%;
+    /* 确保图像在容器内缩放 */
+    height: auto;
+    /* 保持图像纵横比 */
+    display: block;
+    /* 使图像为块级元素 */
+    margin: 0 auto;
+    /* 居中对齐 */
 }
 
 #write p>.md-image:only-child:not(.md-img-error) img,
 #write p>img:only-child {
-    filter: drop-shadow(var(--img-shadow-color) 0px 6px 6px);
-    display: block;
-    margin: 0 auto;
+    filter: drop-shadow(var(--img-shadow-color) 0px 4px 8px);
+    /* 更柔和的阴影效果 */
     padding: 1rem;
+    /* 内边距 */
+    border-radius: 8px;
+    /* 圆角边框 */
+    border: 1px solid var(--block-bg-color);
+    /* 边框 */
+    margin: 1rem auto;
+    /* 外边距，确保上下空间 */
 }
 
-/* ���� Table */
+/* 表格 Table */
 
 #write table {
     display: table;
-    text-align: justify;
+    text-align: left;
+    /* 调整文本对齐方式以提高可读性 */
     overflow-x: auto;
+    /* 确保表格在小屏幕上的可滚动性 */
     border-collapse: collapse;
+    /* 合并边框 */
     border-spacing: 0px;
-    font-size: 1em;
-    margin: 0px 0px 20px;
+    /* 无额外间距 */
+    font-size: 1rem;
+    /* 设置字体大小 */
+    margin: 0 0 1.5rem;
+    /* 设置底部外边距 */
     width: 100%;
+    /* 确保表格宽度自适应容器 */
 }
 
+/* 表格主体样式 */
 #write tbody {
     border: 0;
 }
 
+/* 表格行样式 */
 #write table tr {
     border: 0;
-    border-top: 1px solid #ccc;
+    border-top: 1px solid var(--quote-bar-color);
+    /* 表格行顶部边框 */
 }
 
+/* 表格单元格样式 */
 #write table tr th,
 #write table tr td {
     font-size: 1rem;
-    border: 1px solid #d9dfe4;
-    padding: 5px 10px;
-    text-align: justify;
+    /* 单元格字体大小 */
+    border: 1px solid var(--cell-border-color);
+    /* 单元格边框颜色 */
+    padding: 10px 15px;
+    /* 内边距，增加单元格的舒适感 */
+    text-align: left;
+    /* 左对齐以提高可读性 */
 }
 
+/* 表头样式 */
 #write table tr th {
-    font-family: LXGWWenKaiGBScreen;
+    font-family: 'LXGW WenKai Lite', serif;
+    /* 表头字体 */
     text-align: center;
+    /* 表头内容居中 */
     min-width: 10rem;
+    /* 表头单元格最小宽度 */
     font-weight: bold;
+    /* 粗体显示 */
     color: var(--primary-color);
+    /* 表头文字颜色 */
+    background-color: var(--header-bg-color);
+    /* 表头背景颜色 */
 }
 
+/* 单元格悬停效果 */
 #write table tr td:hover,
 #write table tr th:hover {
-    background-color: var(--block-bg-color);
+    background-color: var(--cell-hover-bg-color);
+    /* 悬停背景颜色 */
 }
 
-table td {
+/* 最小宽度设置 */
+#write table td {
     min-width: 32px;
+    /* 单元格的最小宽度 */
 }
 
+/* 调整表格大小弹出菜单样式 */
 .md-table-resize-popover {
     width: auto !important;
 }
 
-/* ��ע Footnote */
+/* 脚注 Footnote */
 
+/* 脚注上标 */
 sup.md-footnote {
     background-color: var(--block-bg-color);
+    /* 设置浅背景颜色 */
     color: var(--primary-color);
+    /* 设置文本颜色 */
+    border-radius: 0.2rem;
+    /* 圆角 */
+    padding: 0.1rem 0.3rem;
+    /* 内边距 */
+    font-size: 0.8em;
+    /* 缩小字体 */
+    position: relative;
+    /* 相对定位 */
+    top: -0.3em;
+    /* 调整垂直位置 */
+    left: 0em;
+    /* 调整水平位置 */
+    margin-left: 0.2rem;
+    /* 左边距 */
+    margin-right: 0.2rem;
+    /* 右边距 */
 }
 
+/* 脚注内容 */
+.md-footnotes {
+    border-top: 1px solid var(--marker-color);
+    /* 顶部边框 */
+    padding-top: 1rem;
+    /* 上内边距 */
+    margin-top: 2rem;
+    /* 上外边距 */
+}
+
+.md-footnote-content {
+    font-size: 0.9em;
+    /* 调整字体大小 */
+    color: var(--text-color);
+    /* 文本颜色 */
+    background-color: var(--block-bg-color);
+    /* 设置浅背景颜色 */
+    padding: 0.5rem;
+    /* 内边距 */
+    border-radius: 0.3rem;
+    /* 圆角 */
+    margin-bottom: 1rem;
+    /* 下外边距 */
+}
+
+/* 脚注定义名 */
 .md-def-name {
     color: var(--primary-color);
+    /* 设置文本颜色 */
+    font-weight: normal;
+    /* 粗体 */
+    margin-right: 0.5rem;
+    /* 右边距 */
 }
 
-/* ��ѧ��ʽ Math Script */
+/* 数学公式 Math Script */
 
 .md-inline-math script {
     color: var(--primary-color);
@@ -503,29 +599,27 @@ sup.md-footnote {
 .md-comment {
     color: #a8a8a9;
     opacity: 1;
-    font-family: 'JetBrainsMono';
+    font-family: 'Fira Code Light';
 }
 
-/* �ָ��� Dividing line */
+/* 分割线 Dividing line */
 
 hr {
-    margin-top: 20px;
-    margin-bottom: 20px;
     border: 0;
-    border-top: 1.4px solid;
-    border-image: linear-gradient(to right, transparent 10%, #D0DDE6 25%, #D0DDE6 75%, transparent 90%) 1;
-    border-radius: 2px;
-    /* ����ָ��� */
+    border-top: 1px solid #D0DDE6;
+    border-bottom: 1px solid #D0DDE6;
+    margin: 20px 0;
+    height: 2px;
 }
 
-/* Checkbox */
+/* 任务列表 Checkbox */
 
 #write input[type=checkbox] {
     width: 0;
 }
 
 .task-list-item input::before {
-    content: "";
+    content: '';
     display: inline-block;
     width: 1.0125rem;
     height: 1.0125rem;
@@ -533,20 +627,23 @@ hr {
     text-align: center;
     border: 1px solid var(--marker-color);
     border-radius: 1.2rem;
-    background-color: #fdfdfd;
+    background-color: var(--bg-color);
     margin-left: -0.1rem;
     margin-right: 0.1rem;
-    margin-top: -.6rem;
+    margin-top: 0rem;
 }
 
 .task-list-item input:checked::before {
-    content: '???';
-    font-weight: bold;
+    content: '';
+    display: inline-block;
     -webkit-text-stroke: 1px var(--primary-color);
-    color: var(--primary-color);
-    background-color: var(--bg-color);
-    font-size: 0.75rem;
-    line-height: 0.8rem;
+    background-color: var(--md-char-color);
+    line-height: 1rem;
+}
+
+/* TODO：选中复选框后，给后面的文字添加删除线 */
+.task-list-item input:checked+label {
+    text-decoration: line-through;
 }
 
 blockquote .task-list-item input::before {
@@ -557,7 +654,7 @@ blockquote .task-list-item input::before {
  * Sidebar
  */
 #typora-sidebar {
-    font-family: 'Cantarell', 'LXGWWenKaiGBScreen';
+    font-family: 'Cantarell', 'LXGW WenKai Lite';
     height: 100%;
     color: var(--text-color);
     font-size: 0.92rem;
@@ -607,7 +704,7 @@ span.file-node-title-ext-part {
 }
 
 .file-tree-node.active>.file-node-background {
-    border-left: 4px solid var(--primary-color);
+    border-left: 4px solid var(--secondary-color);
     border-color: var(--primary-color);
 }
 
@@ -624,7 +721,7 @@ span.file-node-title-ext-part {
 
 #outline-content .outline-active,
 .pin-outline .outline-active {
-    color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
 .outline-item {
@@ -638,7 +735,7 @@ span.file-node-title-ext-part {
 /* Meta Block */
 
 pre.md-meta-block {
-    font-family: 'JetBrainsMono';
+    font-family: 'Fira Code Light';
     color: var(--primary-color);
     background: #f6f8fa;
     padding: 1.5rem;
@@ -675,7 +772,7 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
     width: 1rem;
 }
 
-/* ������� Code Block - Style */
+/* 代码块风格 Code Block - Style */
 
 .md-fences:before {
     content: ' ';
@@ -683,7 +780,7 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
     width: 100%;
     background-size: 40px;
     background-repeat: no-repeat;
-    background-color: #d9d9d9;
+    background-color: var(--block-bg-color);
     margin-bottom: -7px;
     border-radius: 5px;
     background-position: 10px 10px;
@@ -700,9 +797,9 @@ pre.md-fences-advanced.md-focus .md-fences-adv-panel {
 .cm-s-inner.CodeMirror {
     padding: 1.2rem .8rem;
     color: #4f5467;
-    font-family: 'JetBrainsMono';
+    font-family: 'Fira Code Light';
     border-radius: 10px;
-    background-color: #f4f4f4;
+    background-color: var(--block-bg-color);
     line-height: 1.6rem;
 }
 
@@ -722,17 +819,17 @@ pre.CodeMirror-line {
     color: #3498db;
 }
 
-/* �ؼ��� - ����ʯ */
+/* 关键字 - 海蓝石 */
 .cm-s-inner .cm-keyword {
     color: #87d4eb !important;
 }
 
-/* ������ - ����ɫ */
+/* 操作符 - 铁灰色 */
 .cm-s-inner .cm-operator {
     color: #43464B !important;
 }
 
-/* ���������ö���ͷ�ļ�����ǩ�����ԡ����� - ��ˮ�� */
+/* 变量、内置对象、头文件、标签、属性、引用 - 紫水晶 */
 .cm-s-inner .cm-variable,
 .cm-s-inner .cm-builtin,
 .cm-s-inner .cm-header,
@@ -742,61 +839,61 @@ pre.CodeMirror-line {
     color: #9932CC !important;
 }
 
-/* ����2 - ����ʯ */
+/* 变量2 - 绿松石 */
 .cm-s-inner .cm-variable-2 {
     color: #30d5b1 !important;
 }
 
-/* ����3�����͡�ԭ�� - ����ʯ */
+/* 变量3、类型、原子 - 蓝宝石 */
 .cm-s-inner .cm-variable-3,
 .cm-s-inner .cm-type,
 .cm-s-inner .cm-atom {
     color: #3c7ce3 !important;
 }
 
-/* ���� - õ��ʯ�� */
+/* 数字 - 玫瑰石膏 */
 .cm-s-inner .cm-number {
     color: #e5c0ff !important;
 }
 
-/* ���塢�޶��� - ���ʯ */
+/* 定义、限定符 - 青金石 */
 .cm-s-inner .cm-def,
 .cm-s-inner .cm-qualifier {
     color: #1357a5c2 !important;
 }
 
-/* �ַ��� - ������ */
+/* 字符串 - 黄铁矿 */
 .cm-s-inner .cm-string {
     color: #8B4513 !important;
 }
 
-/* �ַ���2 - ����ʯ */
+/* 字符串2 - 绿松石 */
 .cm-s-inner .cm-string-2 {
     color: #30D5C8 !important;
 }
 
-/* ע�� - ���� */
+/* 注释 - 银灰 */
 .cm-s-inner .cm-comment {
     color: #C0C0C0 !important;
 }
 
-/* Ԫ���� - ����ɫ */
+/* 元数据 - 暗金色 */
 .cm-s-inner .cm-meta {
     color: #B8860B !important;
 }
 
-/* ���� - ��ˮ�� */
+/* 属性 - 紫水晶 */
 .cm-s-inner .cm-attribute {
     color: #9932CC !important;
 }
 
-/* ���� - ��õ�� */
+/* 错误 - 铁玫瑰 */
 .cm-s-inner .cm-error {
     color: #FFFFFF !important;
     background-color: #D02537 !important;
 }
 
-/* ƥ������� - ����ʯ */
+/* 匹配的括号 - 白垩石 */
 .cm-s-inner .CodeMirror-matchingbracket {
     text-decoration: underline;
     color: #ffffffc3 !important;
