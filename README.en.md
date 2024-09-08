@@ -33,7 +33,7 @@ The code font is [Fira Code](https://github.com/tonsky/FiraCode). The code block
 ## Installation
 
 The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-theme-marble)
-, [Gitee](https://gitee.com/yoghurtlee-thu/typora-theme-marble) and [Codeburg](https://codeberg.org/chlorine3545/typora-theme-marble) . Feel free to choose your preferred download source.
+, [Gitee](https://gitee.com/yoghurtlee-thu/typora-theme-marble) and [Codeberg](https://codeberg.org/chlorine3545/typora-theme-marble) . Feel free to choose your preferred download source.
 
 1. Clone this repository, or download `typora-theme-marble.zip` from Latest Release and unzip it.
 2. Open the theme section of the Typora menu and click the "Open Theme Folder" button.
@@ -53,12 +53,12 @@ The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-th
 
 This theme was initially for personal use, and the style was adjusted based on my personal preferences. The initial development of this theme was based on Windows 11 23H2, and subsequent maintenance was based on macOS Sonoma. so there may be unknown style issues on other systems.
 
-Raising Issues/Pull Requests on Github/Gitee/Codeburg is always welcomed. You can also reach me via email at [yoghurtlee123@gmail.com](mailto:yoghurtlee123@gmail.com) or via Jami @chlorine3545. Thank you for your valuable opinions and suggestions.
+Raising Issues/Pull Requests on Github/Gitee/Codeberg is always welcomed. You can also reach me via email at [me@yoghurtlee.com](mailto:me@yoghurtlee.com) or via Jami @chlorine3545. Thank you for your valuable opinions and suggestions.
 
 ## Acknowledgements
 
 - The style code is based on the [Lapis theme](https://github.com/YiNNx/typora-theme-lapis) by [YiNNx](https://github.com/YiNNx).
-- The Chinese font uses the beautiful open-source font [LxgwWenKai LXGW](https://github.com/lxgw/LxgwWenKai).
+- The Chinese font uses the beautiful open-source font [LXGW WenKai](https://github.com/lxgw/LxgwWenKai).
 - Thanks to ChatGPT and Github Copilot for their help.
 
 ## License
