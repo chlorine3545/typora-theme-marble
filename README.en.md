@@ -51,9 +51,9 @@ The theme is open source on [Github](https://github.com/yoghurtlee-thu/typora-th
 
 ## Contribution
 
-This theme was initially for personal use, and the style was adjusted based on my personal preferences. The initial development of this theme was based on Windows 11 23H2, and subsequent maintenance was based on macOS Sonoma. so there may be unknown style issues on other systems.
+This theme was initially for personal use, and the style was adjusted based on my personal preferences. The initial development of this theme was based on Windows 11 23H2, and subsequent maintenance was based on macOS. so there may be unknown style issues on other systems.
 
-Raising Issues/Pull Requests on Github/Gitee/Codeberg is always welcomed. You can also reach me via email at [me@yoghurtlee.com](mailto:me@yoghurtlee.com) or via Jami @chlorine3545. Thank you for your valuable opinions and suggestions.
+Raising Issues/Pull Requests on Github/Gitee/Codeberg is always welcomed. You can also reach me via email at [hi@chlor.me](hi@chlor.me). Thank you for your valuable opinions and suggestions.
 
 ## Acknowledgements
 
